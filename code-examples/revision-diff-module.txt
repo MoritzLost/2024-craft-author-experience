@@ -1,0 +1,11 @@
+❯ cd modules/RevisionDiff
+❯ tree .
+.
+├── RevisionDiffModule.php
+├── fieldlayoutelements
+│   └── RevisionDiff.php
+├── services
+│   ├── ComparisonService.php
+│   └── DiffService.php
+└── templates
+    └── changes-tab.twig

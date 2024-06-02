@@ -1,0 +1,19 @@
+<ul>
+    <li><a href="{{ cpUrl('entries') }}">
+        {{ 'widget_quick_links_link_entries'|t('custom_workflows') }}
+    </a></li>
+
+    <li><a href="{{ cpUrl('myaccount') }}">
+        {{ 'widget_quick_links_link_profile'|t('custom_workflows') }}
+    </a></li>
+
+    {% if contactEntry %}
+        <li><a href="{{ contactEntry.getUrl() }}">
+            {{ 'widget_quick_links_link_contact'|t('custom_workflows') }}
+        </a></li>
+    {% endif %}
+
+    <li><a href="{{ siteUrl() }}">
+        {{ 'widget_quick_links_link_home'|t('custom_workflows') }}
+    </a></li>
+</ul>
